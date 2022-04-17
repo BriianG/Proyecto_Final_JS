@@ -1,0 +1,104 @@
+
+[
+    {
+        "id": 1,
+        "nombre": "Nueces", 
+        "precio": 100,
+        "stock": 120,
+        "imagen": "./img/img/carrito/nueces.jpeg"
+    },
+
+    {
+        "id":2,
+        "nombre": "Almendras", 
+        "precio": 120, 
+        "stock": 110,
+        "imagen": "./img/img/carrito/almendras.jpeg"
+    },
+
+    {
+        "id":3 ,
+        "nombre": "Mani", 
+        "precio": 21, 
+        "stock": 150,
+        "imagen": "./img/img/carrito/mani_cascara.jpeg"
+    },
+
+    {
+        "id":4 ,
+        "nombre": "Lentejas", 
+        "precio": 100, 
+        "stock": 1000,
+        "imagen": "./img/img/carrito/lentejas.jpeg"
+    },
+
+    {
+        "id":5 ,
+        "nombre": "Legumbres", 
+        "precio": 2450, 
+        "stock": 240,
+        "imagen": "./img/img/carrito/legumbres.jpeg"
+    },
+
+    {
+        "id":6 ,
+        "nombre": "Castañas", 
+        "precio": 100, 
+        "stock": 120,
+        "imagen": "./img/img/carrito/castañas.jpeg"
+    },
+
+    {
+        "id":7 ,
+        "nombre": "Pasas de uva ", 
+        "precio":100, 
+        "stock": 120,
+        "imagen": "./img/img/carrito/pasas_uva.jpeg"
+    },
+    {
+        "id":8 ,
+        "nombre": "Nueces pecan", 
+        "precio": 100, 
+        "stock": 120,
+        "imagen": "./img/img/carrito/pecan.jpeg"
+    },
+    {
+        "id":9 ,
+        "nombre": "Pistachos", 
+        "precio": 100, 
+        "stock": 120,
+        "imagen": "./img/img/carrito/pistachos.jpeg"
+    },
+
+    {
+        "id":10 ,
+        "nombre": "Mix de semillas", 
+        "precio": 100, 
+        "stock": 120,
+        "imagen": "./img/img/carrito/semilla_mix.jpeg"
+    },
+
+    {
+        "id":11 ,
+        "nombre": "Semillas de zapallo", 
+        "precio": 100, 
+        "stock": 120,
+        "imagen": "./img/img/carrito/semillas_zapallo.jpeg"
+    },
+
+
+    {
+        "id":12 ,
+        "nombre": "Avellanas", 
+        "precio": 100, 
+        "stock": 120,
+        "imagen": "./img/img/carrito/avellana.jfif"
+
+    }
+]
+
+
+
+
+
+

@@ -1,0 +1,172 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <!-- <link rel="stylesheet" href="css/contacto.css"> -->
+    <link href="https://file.myfontastic.com/hPat9LcCnNzc5BARSfP4pf/icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+<div class="logo-container column column--50">
+    <h1 class="logo">SCA Alimentando la conciencia</h1>
+        </div>
+        <div class="main-header__contactInfo column column--50">
+            <!-- <p class="main-header__contactInfo__phone"> -->
+                <!-- <span class="icon-phone">+54 9 115858-0000</span> -->
+            <!-- </p> -->
+            <!-- <p class="main-header__contactInfo_address"><span class="icon-location">Buenos Aires - Moreno -  Argentina</span> -->
+            <!-- </p> -->
+        </div>
+        </div>
+    </header>
+
+
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span class="icon-menu" id="btnmenu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="index.html" class="menu__link menu__link--select">Inicio</a></li>
+                <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link">Galeria de productos</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-instagram"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+            </div>   
+        </div>
+    </nav>
+    
+    <section class="banner">
+        <img src="img/banner.jpeg" alt="" class="banner__img">
+        <div class="banner__content">Los mejores productos los encuentras aqui</div>
+    </section>
+    
+    <main class="main">
+
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Bienvenido a SCA </h2>
+                <p class="main__txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur odit temporibus nobis aspernatur necessitatibus nisi, voluptates aperiam itaque sint cupiditate assumenda velit commodi totam optio obcaecati nam! Ullam, nisi illo!</p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- CARRITO DE COMPRAS -->
+
+<div class="container"">
+    <h1 class="group__title">Galeria de productos</h1>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th class="group__title_gallery" scope="col">#</th>
+            <th class="group__title_gallery"  scope="col">Item</th>
+            <th class="group__title_gallery" scope="col">Cantidad</th>
+            <th class="group__title_gallery" scope="col">Acción</th>
+            <th class="group__title_gallery" scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>   
+        <tfoot>
+          <tr id="footer">  <th scope="row" colspan="5" class="group__title_gallery">Carrito vacío - comience a comprar!</th>
+          
+          </tr>
+        </tfoot>
+      </table>
+    <!-- Donde sera leida la card sin importar que el template este abajo -->
+    <div class="row" id="cards"></div>
+</div>
+
+
+<template id="template-footer">
+    <th scope="row" colspan="2" class="group__title_gallery">Total productos</th>
+    <td class="group__title_gallery">10</td>
+    <td>
+        <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+            vaciar todo
+        </button>
+    </td>
+    <td class="font-weight-bold group__title_gallery">$ <span class="">5000</span></td>
+</template>
+
+
+<template id="template-carrito">
+  <tr>
+    <th scope="row">id</th>
+    <td class="group__title_gallery"">Cereal</td>
+    <td class="group__title_gallery"">$1</td>
+    <td>
+        <button class="btn btn-info">
+            +
+        </button>
+        <button class="btn btn-danger">
+            -
+        </button>
+    </td>
+    <td class="group__title_gallery">$ <span class="">500</span></td>
+  </tr>
+</template>
+
+<template id="template-card">
+    <div class="col-12 mb-2 col-md-4">
+        <div class="card">
+            <img src="" alt="" class="card-img-top gallery__img">
+            <div class="card-body">
+                <h5>Titulo</h5>
+                <p>Precio</p>
+                <button class="btn_n btn btn-dark">Comprar</button>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+
+
+
+
+
+
+    <footer class="main-footer">
+        <div class="container container--flex">
+    <div class="column column--33">
+    <h2 class="column__title">Alimentación Conciente</h2>
+    <p class="column__Txt">La sociedad mundial comenzó a tomar conciencia de que grandes partes de las enfermedades, son producidas por los hábitos diarios. En la sociedad del siglo 21 es común escuchar la palabra estrés, alergias, dolores de cabeza, hinchazón, sobrepeso y dolores de estómago, por solo citar algunas palabras comunes. A estas podemos destacar la diabetis y la celiaquía, dos enfermedades que en la década pasada no resonaban tanto en el común de las personas. 
+    Las tendencias de los hábitos y el ritmo acelerado de la vida, nos ha provocado generar diferentes hábitos, como es el remplazar la comida hecha en casa por la comida rápida, estamos tan apurados que no tenemos tiempo. </p>
+    
+    </div>
+    <div class="column column--33">
+        <h2 class="column__title"> Contactanos</h2>
+        <p class="column__Txt">Corrientes 4042 Paso del Rey 1742 Moreno Buenos Aires</p>
+        <p class="column__Txt">Telefono: +54 9 11 3440-8385</p>
+        <p class="column__Txt">satchitananda_consultas@hotmail.com</p>
+    </div>
+    <div class="column column--33">
+        <h2 class="column__title">Siguenos</h2>
+        <p class="column__Txt"><a href="" class="icon-facebook">Facebook</a></p>
+        <p class="column__Txt"><a href="" class="icon-twitter">Siguenos en Twitter</a></p>
+        <p class="column__Txt"><a href="" class="icon-youtube">Visita nuestro canal para mas recetas</a></p>
+    </div>
+    <p class="copy">@ 2022 SCA Todos los derechos reservados</p>
+</div>
+</footer>
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+<script src="js/carrito.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
